@@ -175,4 +175,69 @@
     </form>
 
     <section id="birthdayform" class="section">
-      
+       <section id="crew" class="section">
+    <h2>🧑🏾‍🍳 Our Crew</h2>
+    <p><em>Meet the hearts behind the flavors—the chillest crew this side of flavor town.</em></p>
+    <ul>
+      <li><strong>Kehz Gbugu</strong> – a chill guy and founder of Lawrence & Gbugu’s Mixed Delights<br>🎮 Fortnite username: <em>FineFinch8854</em></li>
+      <li><strong>Liam Lawrence</strong> – co-founder and certified chill dude</li>
+      <li><strong>Azah</strong> – the genius behind the legendary <em>Azah Egg Special</em></li>
+    </ul>
+  </section>
+
+  <section id="surprise" class="section">
+    <h2>🎁 Surprise Deal of the Week</h2>
+    <p><em>One mystery combo. One unbelievable price. Available every Friday through Sunday!</em></p>
+    <ul>
+      <li><strong>✨ This Week’s Surprise:</strong> Nutella Crepe + Cinnabon Cookie + Frozen Lightning Lemonade — <strong>$5.00</strong></li>
+      <li><strong>🔄 Next Deal Drops:</strong> Every Friday at noon! Come hungry 😋</li>
+    </ul>
+  </section>
+
+  <section id="snack-wheel" class="section">
+    <h2>🎡 Spin the Snack Wheel</h2>
+    <p><em>Feeling lucky? Give it a whirl and see what treat fate delivers!</em></p>
+    <button onclick="spinTheWheel()">🔄 Spin</button>
+    <p id="wheel-result" style="margin-top:1rem; font-weight:bold; font-size:1.2em;"></p>
+  </section>
+
+  <section id="order" class="section">
+    <h2>🛍️ Order Now</h2>
+    <p>We’re cooking up our online store—until then, contact us directly!</p>
+    <p>
+      📧 Email: <a href="mailto:sweetvibes@mixeddelights.com">sweetvibes@mixeddelights.com</a><br>
+      📱 Instagram: <a href="#">@MixedDelightsVibes</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Lawrence & Gbugu’s Mixed Delights. All rights reserved.
+  </footer>
+
+  <script>
+    // Snack Wheel Magic
+    function spinTheWheel() {
+      const options = [
+        "🍪 Cookie + 🍋 Lemonade",
+        "🍫 G-Force Brownie + 🥞 Crepe",
+        "🎂 Cake-Zilla Slice + 🧇 Waffle",
+        "🍞 French Toast + 🍥 Cinnamon Treat",
+        "🥞 Pancake + 🍋 Frozen Lemonade",
+        "🍪 Cinnabon Cookie + 🍫 Brownie",
+        "🥞 Nutella Crepe + 🍋 Lemonade",
+        "🍳 Azah Egg Special + 🧇 Waffle"
+      ];
+      const choice = options[Math.floor(Math.random() * options.length)];
+      document.getElementById("wheel-result").textContent = `You got: ${choice}!`;
+    }
+
+    // Birthday Form Confirmation
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("🎉 Your birthday brunch request was received! We'll reach out with sweet details soon.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
