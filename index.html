@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lawrence & Gbugu’s Mixed Delights</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #ffe066;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+    header {
+      background-color: #ffef99;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 0.75rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffe066;
+    }
+    button {
+      background-color: #ffe066;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ffcd00;
+    }
+    .staff-pick {
+      color: #ff6f00;
+      font-weight: bold;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .balloons {
+      animation: float 6s ease-in-out infinite alternate;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-30px); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">🏠 Home</a>
+    <a href="#menu">🍪 Menu</a>
+    <a href="#brunch">🍳 Brunch</a>
+    <a href="#deals">💸 Great Deals</a>
+    <a href="#birthday">🎂 Birthday Combos</a>
+    <a href="#crew">🧑🏾‍🍳 Our Crew</a>
+    <a href="#order">🛍️ Order Now</a>
+  </nav>
+
+  <header id="home">
+    <h1>⚡ Lawrence & Gbugu’s Mixed Delights ⚡</h1>
+    <p><em>Sweet lightning in every bite.</em></p>
+  </header>
+
+  <section id="menu" class="section">
+    <h2>🍪 Our Menu</h2>
+    <p><em>Because the G stands for <strong>Great</strong>—and so are our treats!</em></p>
+    <ul>
+      <li><strong>Classic Choco-Chip Cookies</strong> — $2.00</li>
+      <li><strong>Cinnabon Cookies</strong> — $2.50</li>
+      <li><strong>Frozen Lightning Lemonade</strong> — $2.50</li>
+      <li><strong>The Gbugu Special</strong> — $6.00</li>
+      <li><strong>Lawrence's Sweet Stack</strong> — $5.75</li>
+      <li><strong>G-Force Brownies</strong> — $2.75</li>
+      <li><strong>Cake-Zilla Slices</strong> — $3.50</li>
+      <li><strong>Crepes</strong> – Nutella, whipped cream, or plain — $3.00</li>
+    </ul>
+  </section>
+
+  <section id="brunch" class="section">
+    <h2>🍳 Brunch Delights</h2>
+    <p><em>Start your day with the G of Greatness—served hot, sweet, and soul-satisfying.</em></p>
+    <ul>
+      <li><strong>Waffles</strong> — $4.00</li>
+      <li><strong>Pancakes</strong> — $4.00</li>
+      <li><strong>French Toast</strong> — $3.75</li>
+      <li><strong>Eggs Azah Special</strong> — $3.50</li>
+      <li><strong>Cinnamon Treat Sampler</strong> — $3.25</li>
+    </ul>
+  </section>
+
+  <section id="deals" class="section">
+    <h2>💸 Great Deals</h2>
+    <p><em>Because the G stands for <strong>Great deals</strong>—sweet combos, sweet prices!</em></p>
+    <ul>
+      <li><strong>The Cookie Blitz</strong> — $5.00</li>
+      <li><strong>Lawrence & Gbugu Duo</strong> — $6.50 <span class="staff-pick">🌟 Staff Pick!</span></li>
+      <li><strong>Brunch Bomb</strong> — $8.00</li>
+      <li><strong>Triple Threat Remix</strong> — $7.50</li>
+      <li><strong>Lightning Lovers Feast</strong> — $9.00 <span class="staff-pick">🌟 Staff Pick!</span></li>
+      <li><strong>Morning Thunder</strong> — $6.75</li>
+      <li><strong>Cake Break</strong> — $5.50</li>
+      <li><strong>Cookie & Creamy</strong> — $6.25</li>
+      <li><strong>Azah Power Pack</strong> — $7.00</li>
+      <li><strong>Sweet Squad Bundle</strong> — $9.50</li>
+      <li><strong>The Cinna-Champ Combo</strong> — $6.00 <span class="staff-pick">🌟 Staff Pick!</span></li>
+      <li><strong>Great Day Starter</strong> — $7.25</li>
+    </ul>
+  </section>
+
+  <section id="birthday" class="section">
+    <h2>🎂 Birthday Combos</h2>
+    <div class="balloons">🎈 🎈 🎈 🎈 🎈 🎈 🎈</div>
+    <p><strong style="color:#ff6f00;">🎉 Celebrating a big day?</strong> Let us sweeten it—ask about our birthday bundles!</p>
+    <ul>
+      <li><strong>Sweet Cake Bash</strong> — $7.50</li>
+      <li><strong>Confetti Combo</strong> — $6.00 <span class="staff-pick">🌟 Staff Pick!</span></li>
+      <li><strong>Birthday Brunch Blowout</strong> — $8.50</li>
+      <li><strong>The Party Pack</strong> — $9.25</li>
+      <li><strong>Candlelight Cookie Deluxe</strong> — $5.75</li>
+    </ul>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST" style="margin-top:1.5rem;">
+      <label for="name"><strong>Name:</strong></label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="date"><strong>Birthday Date:</strong></label><br>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="favorites"><strong>Favorite Treats:</strong></label><br>
+      <input type="text" id="favorites" name="favorites"><br><br>
+
+      <input type="submit" value="🎁 Book My Brunch">
+    </form>
+
+    <section id="birthdayform" class="section">
+      
