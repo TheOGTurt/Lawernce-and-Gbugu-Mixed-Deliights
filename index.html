@@ -18,6 +18,7 @@
       text-align: center;
       position: sticky;
       top: 0;
+      z-index: 1000;
     }
     nav a {
       margin: 0 10px;
@@ -42,25 +43,6 @@
     li {
       margin: 0.75rem 0;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #ffe066;
-    }
-    button {
-      background-color: #ffe066;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 10px;
-    }
-    .balloons {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
     .staff-pick {
       color: #ff6f00;
       font-weight: bold;
@@ -75,9 +57,10 @@
     <a href="#brunch">🍳 Brunch</a>
     <a href="#drinks">🥤 Drinks</a>
     <a href="#lunch">🍔 Lunch</a>
+    <a href="#deals">💸 Deals</a>
     <a href="#birthday">🎂 Birthday</a>
-    <a href="#crew">🧑🏾‍🍳 Our Crew</a>
-    <a href="#order">🛍️ Order Now</a>
+    <a href="#crew">🧑🏾‍🍳 Crew</a>
+    <a href="#order">🛍️ Order</a>
   </nav>
 
   <header id="home">
@@ -87,135 +70,191 @@
 
   <section id="menu" class="section">
     <h2>🍪 Our Menu</h2>
+    <p><em>Because the G stands for <strong>Great</strong>—and so are our treats!</em></p>
     <ul>
-      <li><strong>Classic Choco-Chip Cookies</strong> — soft, warm, and packed with chocolate chunks — $2.00</li>
-      <li><strong>Cinnabon Cookies</strong> — gooey cinnamon swirl meets cookie magic — $2.50</li>
-      <li><strong>Frozen Lightning Lemonade</strong> — our signature citrus freeze — $2.50</li>
-      <li><strong>The Gbugu Special</strong> — a cookie, lemonade, and brownie bundled for power — $6.00</li>
-      <li><strong>Lawrence’s Sweet Stack</strong> — layered crepe, cookie, and cinnamon treat — $5.75</li>
-      <li><strong>G-Force Brownies</strong> — rich, dense chocolate brownies with a kick — $2.75</li>
-      <li><strong>Cake-Zilla Slices</strong> — giant frosted slices worthy of a birthday — $3.50</li>
-      <li><strong>Crepes</strong> — Nutella, whipped cream, or plain folded love — $3.00</li>
+      <li><strong>Classic Choco-Chip Cookies</strong> – crispy outside, gooey center — <strong>$2.00</strong></li>
+      <li><strong>Cinnabon Cookies</strong> – cinnamon swirl cookies topped with vanilla drizzle — <strong>$2.50</strong></li>
+      <li><strong>Frozen Lightning Lemonade</strong> – icy, zesty, and bold — <strong>$2.50</strong></li>
+      <li><strong>The Gbugu Special</strong> – 2 cookies + 2 lemonades — <strong>$6.00</strong></li>
+      <li><strong>Lawrence's Sweet Stack</strong> – cookie tower & lemonade float — <strong>$5.75</strong></li>
+      <li><strong>G-Force Brownies</strong> – rich, fudgy, and unstoppable — <strong>$2.75</strong></li>
+      <li><strong>Cake-Zilla Slices</strong> – towering layers of moist cake — <strong>$3.50</strong></li>
+      <li><strong>Crepes</strong> – Nutella, whipped cream, or plain — <strong>$3.00</strong></li>
     </ul>
   </section>
 
   <section id="brunch" class="section">
     <h2>🍳 Brunch Delights</h2>
+    <p><em>Start your day with the G of Greatness—served hot, sweet, and soul-satisfying.</em></p>
     <ul>
-      <li><strong>Waffles</strong> — crisp, golden, and fluffy inside — $4.00</li>
-      <li><strong>Pancakes</strong> — thick stacks served with butter and syrup — $4.00</li>
-      <li><strong>French Toast</strong> — cinnamon-dusted and pan-toasted — $3.75</li>
-      <li><strong>Eggs Azah Special</strong> — Azah’s secret scramble blend — $3.50</li>
-      <li><strong>Cinnamon Treat Sampler</strong> — mini cinnamon roll bites + cookie crumble — $3.25</li>
+      <li><strong>Waffles</strong> – Chocolate Chip, Classic, Diet, or Double Chocolate — <strong>$4.00</strong></li>
+      <li><strong>Pancakes</strong> – Blueberry, Choco Chip, Regular, Diet, or Chocolate — <strong>$4.00</strong></li>
+      <li><strong>French Toast</strong> – golden brown & cinnamon-dusted — <strong>$3.75</strong></li>
+      <li><strong>Eggs Azah Special</strong> – Sunny Side Up, Scrambled, or Fried — <strong>$3.50</strong></li>
+      <li><strong>Cinnamon Treat Sampler</strong> – mini rolls, swirls, crisps & glaze — <strong>$3.25</strong></li>
     </ul>
   </section>
 
   <section id="drinks" class="section">
     <h2>🥤 Drinks</h2>
+    <p><em>Cold, bold, and bursting with citrus-powered zing!</em></p>
     <ul>
-      <li><strong>Orangeade</strong> — sweet and zesty orange refresher — $2.50</li>
-      <li><strong>Limeade</strong> — crisp and tart with real lime — $2.50</li>
-      <li><strong>Triple Citrus Blast</strong> — orange, lemon, and lime fusion — $3.00</li>
-      <li><strong>Orange Juice</strong> — classic sunshine in a glass — $2.25</li>
-      <li><strong>Lemon Stardust</strong> — sparkling lemonade with a twist of vanilla — $2.75</li>
-      <li><strong>Burst</strong> — mystery soda fizz (changes weekly!) — $2.25</li>
-    </ul>
-  </section>
-  <section id="lunch" class="section">
-    <h2>🍔 Lunch Delights</h2>
-    <p><em>Midday munchies? We’ve got cheesy, melty, grill-powered greatness.</em></p>
-    <ul>
-      <li><strong>The Mixed Burger</strong> — juicy beef or ham patty on a toasted bun, served your way — <strong>$5.00</strong></li>
-      <li><strong>🍟 Add-ons</strong> — lettuce, tomato, pickles, grilled onions, jalapeños — <strong>+ $0.25 each</strong></li>
-      <li><strong>Grilled Cheese Supreme</strong> — golden bread stuffed with triple cheese blend — <strong>$4.25</strong></li>
-      <li><strong>Lemon Pepper Tenders</strong> — crispy tenders dusted in citrus-spiced goodness — <strong>$5.50</strong></li>
-      <li><strong>Brunch Burger</strong> — savory burger layered with a fried egg and waffle buns — <strong>$6.25</strong></li>
-      <li><strong>Fried Chicken Flame</strong> — deep-fried perfection, crunchy and flavorful — <strong>$6.00</strong></li>
-      <li><strong>Cookie Crumble Quesadilla</strong> — cheddar melt with cookie crumble twist — <strong>$4.75</strong></li>
+      <li><strong>Orangeade</strong> – sweet and zesty orange refresher — <strong>$2.50</strong></li>
+      <li><strong>Limeade</strong> – cool, tart lime with a sugar twist — <strong>$2.50</strong></li>
+      <li><strong>Triple Citrus Blast</strong> – orange + lemon + lime fusion — <strong>$3.00</strong></li>
+      <li><strong>Orange Juice</strong> – freshly squeezed sunshine — <strong>$2.25</strong></li>
+      <li><strong>Lemon Stardust</strong> – sparkly lemonade with a hint of vanilla — <strong>$2.75</strong></li>
+      <li><strong>Burst</strong> – house mystery soda fizz (flavor changes weekly!) — <strong>$2.25</strong></li>
     </ul>
   </section>
 
-  <section class="section">
-    <h2>🍽️ Lunch Combos</h2>
-    <p><em>Spin up something special or pick from our hand-crafted lunch mashups:</em></p>
+  <section id="deals" class="section">
+    <h2>💸 Great Deals</h2>
+    <p><em>Because the G stands for <strong>Great deals</strong>—sweet combos, sweet prices!</em></p>
     <ul>
-      <li><strong>Deluxe Fry Day</strong> — Fried Chicken + Waffle Fries + Limeade — <strong>$7.25</strong></li>
-      <li><strong>The Stack Attack</strong> — Grilled Cheese + Fried Egg + Cookie — <strong>$6.50</strong></li>
-      <li><strong>Lunchtime Zinger</strong> — Tenders + Triple Citrus Blast — <strong>$6.75</strong></li>
-      <li><strong>Golden Crunch Combo</strong> — Fried Chicken + Fries + OJ — <strong>$6.75</strong></li>
-      <li><strong>Zesty Zinger Meal</strong> — Spicy Tenders + Burst + Brownie — <strong>$6.50</strong></li>
-      <li><strong>Sunny Side Slam</strong> — Brunch Burger + Lemonade + Mini Pancake — <strong>$6.95</strong></li>
-      <li><strong>Sweet & Savory Duo</strong> — Quesadilla + Triple Citrus Blast — <strong>$5.75</strong></li>
-      <li><strong>Lightning Lunch Box</strong> — Ham Melt + Limeade + Cinnamon Treat — <strong>$6.25</strong></li>
-      <li><strong>The Deluxe Dipper</strong> — Chicken Bites + Dips + Fries — <strong>$7.25</strong></li>
-      <li><strong>The Lava Lunch</strong> — Jalapeño Burger + Lemon Stardust — <strong>$6.00</strong></li>
-    </ul>
-  </section>
+      <li><strong>The Cookie Blitz</strong> – 2 Classic Cookies + 1 Lemonade 🍪🍪🍋 — <strong>$5.00</strong></li>
+      <li><strong>Lawrence & Gbugu Duo</strong> – Brownie + Cake-Zilla Slice + Lemonade 🎂🍫🍋 — <strong>$6.50</strong> <span class="staff-pick">🌟 Staff Pick!</span></li>
+      <li><strong>Brunch Bomb</strong> – French Toast + Scrambled Eggs Azah + Cinnamon Sampler 🍞🍳🍥 — <strong>$8.00</strong></li>
+      <li><strong>Triple Threat Remix</strong> – Pancake + Waffle + Lemonade 🥞🧇🍋 — <strong>$7.50</strong></li>
+      <li><strong>Lightning Lovers Feast</strong> – Cookie + Brownie + Crepe + Lemonade ⚡🍪🍫🥞🍋 — <strong>$9.00</strong> <span class="staff-pick">🌟 Staff Pick!</span></li>
+      <li><strong>Morning Thunder</strong> – Waffle + Pancake + Egg + Juice 🧇🥞🍳 — <strong>$6.75</strong></li>
+      <li><strong>Cake Break</strong> – Cake-Zilla Slice + Crepe + Lemonade 🎂🥞🍋 — <strong>$5.50</strong></li>
+      <li><strong>Cookie & Creamy</strong> – 2 Cookies + Creamy Crepe + Lemonade 🍪🥞🍋 — <strong>$6.25</strong></li>
+      <li><strong>Azah Power Pack</strong> – 2 Eggs + Cinnamon Treat + Brownie 🍳🍥🍫 — <strong>$7.00</strong></li>
+      <li><strong>Sweet Squad Bundle</strong> – 2 Cookies + Brownie + Pancake + Lemonade 🍪🍪🍫🥞🍋 — <strong>$9.50</strong></li>
+      <li><strong>The Cinna-Champ Combo</strong> – Cinnabon Cookie + Pancake + Frozen Lemonade 🍪🥞🍋 — <strong>$6.00</strong> <span class="staff-pick">🌟 Staff Pick!</span></li>
+      <li><strong>Great Day Starter</strong> – Nutella Crepe + French Toast + Lemonade 🥞🍞🍋 — <strong>$6.50</strong> </li>
+          </ul>
+</section>
 
-  <section id="lunch-wheel" class="section">
-    <h2>🎯 Spin Your Lunch Combo</h2>
-    <p><em>Can’t decide? Let the flavor gods choose your fate.</em></p>
-    <button onclick="spinLunchCombo()">🎰 Spin the Lunch Wheel</button>
-    <p id="lunch-combo-result" style="margin-top:1rem; font-weight:bold;"></p>
-  </section>
+<section id="lunch" class="section">
+  <h2>🍔 Lunch Delights</h2>
+  <p><em>Midday munchies? We’ve got cheesy, melty, grill-powered greatness.</em></p>
+  <ul>
+    <li><strong>The Mixed Burger</strong> – choice of cheese or ham patty on a toasted bun — <strong>$5.00</strong></li>
+    <li><strong>🍟 Add-ons</strong> – lettuce, tomato, pickles, grilled onions, jalapeños — <strong>+ $0.25 each</strong></li>
+    <li><strong>Grilled Cheese Supreme</strong> – triple cheese melt on buttery bread — <strong>$4.25</strong></li>
+    <li><strong>Lemon Pepper Tenders</strong> – crispy tenders tossed in zesty citrus spice — <strong>$5.50</strong></li>
+    <li><strong>Brunch Burger</strong> – beef patty, fried egg, and waffle buns — <strong>$6.25</strong></li>
+    <li><strong>Fried Chicken Flame</strong> – golden fried chicken breast with honey drizzle option — <strong>$6.00</strong></li>
+    <li><strong>Cookie Crumble Quesadilla</strong> – sweet-savory cheddar melt sprinkled with cookie dust — <strong>$4.75</strong></li>
+  </ul>
+</section>
 
-  <section id="birthday" class="section">
-    <h2>🎂 Birthday Combos</h2>
-    <div class="balloons">🎈 🎈 🎈 🎈 🎈 🎈 🎈</div>
-    <p><strong style="color:#ff6f00;">🎉 Celebrating a big day?</strong> Let us sweeten it—ask about our birthday bundles!</p>
-    <ul>
-      <li><strong>Sweet Cake Bash</strong> — giant slice + cookie + drink — <strong>$7.50</strong></li>
-      <li><strong>Confetti Combo</strong> — pancake stack + confetti cookie — <strong>$6.00</strong> <span class="staff-pick">🌟 Staff Pick!</span></li>
-      <li><strong>Birthday Brunch Blowout</strong> — waffle + egg + juice — <strong>$8.50</strong></li>
-      <li><strong>The Party Pack</strong> — full-size sampler + drink — <strong>$9.25</strong></li>
-      <li><strong>Candlelight Cookie Deluxe</strong> — cookie tower w/ candle + OJ — <strong>$5.75</strong></li>
-    </ul>
-  <section id="lunch" class="section">
-    <h2>🍔 Lunch Delights</h2>
-    <p><em>Midday munchies? We’ve got cheesy, melty, grill-powered greatness.</em></p>
-    <ul>
-      <li><strong>The Mixed Burger</strong> — juicy beef or ham patty on a toasted bun, served your way — <strong>$5.00</strong></li>
-      <li><strong>🍟 Add-ons</strong> — lettuce, tomato, pickles, grilled onions, jalapeños — <strong>+ $0.25 each</strong></li>
-      <li><strong>Grilled Cheese Supreme</strong> — golden bread stuffed with triple cheese blend — <strong>$4.25</strong></li>
-      <li><strong>Lemon Pepper Tenders</strong> — crispy tenders dusted in citrus-spiced goodness — <strong>$5.50</strong></li>
-      <li><strong>Brunch Burger</strong> — savory burger layered with a fried egg and waffle buns — <strong>$6.25</strong></li>
-      <li><strong>Fried Chicken Flame</strong> — deep-fried perfection, crunchy and flavorful — <strong>$6.00</strong></li>
-      <li><strong>Cookie Crumble Quesadilla</strong> — cheddar melt with cookie crumble twist — <strong>$4.75</strong></li>
-    </ul>
-  </section>
+<section class="section">
+  <h2>🍽️ Lunch Combos</h2>
+  <ul>
+    <li><strong>Deluxe Fry Day</strong> – Fried Chicken + Waffle Fries + Limeade — <strong>$7.25</strong></li>
+    <li><strong>The Stack Attack</strong> – Grilled Cheese + Fried Egg + Cookie — <strong>$6.50</strong></li>
+    <li><strong>Lunchtime Zinger</strong> – Lemon Pepper Tenders + Triple Citrus Blast — <strong>$6.75</strong></li>
+    <li><strong>Golden Crunch Combo</strong> – Fried Chicken + Fries + OJ — <strong>$6.75</strong></li>
+    <li><strong>Zesty Zinger Meal</strong> – Spicy Tenders + Burst + Brownie — <strong>$6.50</strong></li>
+    <li><strong>Sunny Side Slam</strong> – Brunch Burger + Lemonade + Mini Pancake — <strong>$6.95</strong></li>
+    <li><strong>Sweet & Savory Duo</strong> – Quesadilla + Triple Citrus Blast — <strong>$5.75</strong></li>
+    <li><strong>Lightning Lunch Box</strong> – Ham Melt + Limeade + Cinnamon Treat — <strong>$6.25</strong></li>
+    <li><strong>The Deluxe Dipper</strong> – Fried Chicken Bites + 3 signature dips + fries — <strong>$7.25</strong></li>
+    <li><strong>The Lava Lunch</strong> – Burger with grilled jalapeños + Lemon Stardust — <strong>$6.00</strong></li>
+  </ul>
+</section>
 
-  <section class="section">
-    <h2>🍽️ Lunch Combos</h2>
-    <p><em>Spin up something special or pick from our hand-crafted lunch mashups:</em></p>
-    <ul>
-      <li><strong>Deluxe Fry Day</strong> — Fried Chicken + Waffle Fries + Limeade — <strong>$7.25</strong></li>
-      <li><strong>The Stack Attack</strong> — Grilled Cheese + Fried Egg + Cookie — <strong>$6.50</strong></li>
-      <li><strong>Lunchtime Zinger</strong> — Tenders + Triple Citrus Blast — <strong>$6.75</strong></li>
-      <li><strong>Golden Crunch Combo</strong> — Fried Chicken + Fries + OJ — <strong>$6.75</strong></li>
-      <li><strong>Zesty Zinger Meal</strong> — Spicy Tenders + Burst + Brownie — <strong>$6.50</strong></li>
-      <li><strong>Sunny Side Slam</strong> — Brunch Burger + Lemonade + Mini Pancake — <strong>$6.95</strong></li>
-      <li><strong>Sweet & Savory Duo</strong> — Quesadilla + Triple Citrus Blast — <strong>$5.75</strong></li>
-      <li><strong>Lightning Lunch Box</strong> — Ham Melt + Limeade + Cinnamon Treat — <strong>$6.25</strong></li>
-      <li><strong>The Deluxe Dipper</strong> — Chicken Bites + Dips + Fries — <strong>$7.25</strong></li>
-      <li><strong>The Lava Lunch</strong> — Jalapeño Burger + Lemon Stardust — <strong>$6.00</strong></li>
-    </ul>
-  </section>
+<section id="lunch-wheel" class="section">
+  <h2>🎯 Spin Your Lunch Combo</h2>
+  <p><em>Can’t decide? Tap below to let the lunch universe decide!</em></p>
+  <button onclick="spinLunchCombo()">🎰 Spin the Lunch Wheel</button>
+  <p id="lunch-combo-result" style="margin-top:1rem; font-weight:bold; font-size:1.2em;"></p>
+</section>
+  <form action="https://formspree.io/f/your-form-id" method="POST" style="margin-top:1.5rem;">
+    <label for="name"><strong>Name:</strong></label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-  <section id="lunch-wheel" class="section">
-    <h2>🎯 Spin Your Lunch Combo</h2>
-    <p><em>Can’t decide? Let the flavor gods choose your fate.</em></p>
-    <button onclick="spinLunchCombo()">🎰 Spin the Lunch Wheel</button>
-    <p id="lunch-combo-result" style="margin-top:1rem; font-weight:bold;"></p>
-  </section>
+    <label for="date"><strong>Birthday Date:</strong></label><br>
+    <input type="date" id="date" name="date" required><br><br>
 
-  <section id="birthday" class="section">
-    <h2>🎂 Birthday Combos</h2>
-    <div class="balloons">🎈 🎈 🎈 🎈 🎈 🎈 🎈</div>
-    <p><strong style="color:#ff6f00;">🎉 Celebrating a big day?</strong> Let us sweeten it—ask about our birthday bundles!</p>
-    <ul>
-      <li><strong>Sweet Cake Bash</strong> — giant slice + cookie + drink — <strong>$7.50</strong></li>
-      <li><strong>Confetti Combo</strong> — pancake stack + confetti cookie — <strong>$6.00</strong> <span class="staff-pick">🌟 Staff Pick!</span></li>
-      <li><strong>Birthday Brunch Blowout</strong> — waffle + egg + juice — <strong>$8.50</strong></li>
-      <li><strong>The Party Pack</strong> — full-size sampler + drink — <strong>$9.25</strong></li>
-      <li><strong>Candlelight Cookie Deluxe</strong> — cookie tower w/ candle + OJ — <strong>$5.75</strong></li>
-    </ul>
+    <label for="favorites"><strong>Favorite Treats:</strong></label><br>
+    <input type="text" id="favorites" name="favorites"><br><br>
+
+    <input type="submit" value="🎁 Book My Brunch" style="padding:10px 20px; font-weight:bold; background:#ffe066; border:none; border-radius:8px; cursor:pointer;">
+  </form>
+</section>
+
+<section id="crew" class="section">
+  <h2>🧑🏾‍🍳 Our Crew</h2>
+  <p><em>The minds and flavors behind the magic.</em></p>
+  <ul>
+    <li><strong>Kehz Gbugu</strong> – Co-founder, designer, and snack scientist supreme</li>
+    <li><strong>Liam Lawrence</strong> – Creative director and menu mixer-in-chief</li>
+    <li><strong>Azah</strong> – Brunch queen and namesake of the famous egg special</li>
+  </ul>
+</section>
+
+<section id="surprise" class="section">
+  <h2>🎁 Surprise Deal of the Week</h2>
+  <p><em>Rotating bundle, surprise price. Only available Friday–Sunday!</em></p>
+  <ul>
+    <li><strong>This Week:</strong> Nutella Crepe + Cinnabon Cookie + Frozen Lemonade — <strong>$5.00</strong></li>
+    <li><strong>Next Deal Drops:</strong> Every Friday at noon 🔄</li>
+  </ul>
+</section>
+
+<section id="snack-wheel" class="section">
+  <h2>🎡 Spin the Snack Wheel</h2>
+  <p><em>Feeling lucky? Give it a whirl and see what treat fate delivers!</em></p>
+  <button onclick="spinTheWheel()">🔄 Spin</button>
+  <p id="wheel-result" style="margin-top:1rem; font-weight:bold;"></p>
+</section>
+
+<section id="order" class="section">
+  <h2>🛍️ Order Now</h2>
+  <p><em>We’re cooking up our online store—until then, message us directly!</em></p>
+  <p>
+    📧 Email: <a href="mailto:sweetvibes@mixeddelights.com">sweetvibes@mixeddelights.com</a><br>
+    📱 Instagram: <a href="#">@MixedDelightsVibes</a>
+  </p>
+</section>
+
+<footer>
+  &copy; 2025 Lawrence & Gbugu’s Mixed Delights. All rights reserved.
+</footer>
+
+<script>
+  function spinLunchCombo() {
+    const combos = [
+      "🍗 Fried Chicken + 🍋 Lemon Stardust + Cookie",
+      "🧀 Grilled Cheese + 🧃 Orangeade + Fries",
+      "🍔 Mixed Burger + Limeade + Cinnabon Cookie",
+      "🥪 Brunch Burger + Add-ons + Burst",
+      "🌮 Quesadilla + Triple Citrus Blast",
+      "🐔 Lemon Pepper Tenders + Orange Juice + Pancake",
+      "🔥 Lava Burger + Lemon Stardust + Brownie",
+      "🥓 Ham Melt + Fries + Limeade",
+      "🧇 Waffle + Chicken + OJ",
+      "🥚 Egg Melt + Quesadilla + Burst"
+    ];
+    const result = combos[Math.floor(Math.random() * combos.length)];
+    document.getElementById("lunch-combo-result").textContent = `Your combo: ${result}`;
+  }
+
+  function spinTheWheel() {
+    const treats = [
+      "🍪 Cookie + 🍋 Lemonade",
+      "🍫 G-Force Brownie + 🥞 Crepe",
+      "🎂 Cake-Zilla Slice + 🧇 Waffle",
+      "🍞 French Toast + 🍥 Cinnamon Treat",
+      "🥞 Pancake + 🍋 Frozen Lightning",
+      "🍪 Cinnabon Cookie + 🍫 Brownie",
+      "🥞 Nutella Crepe + 🍋 Lemonade",
+      "🍳 Azah Egg + 🧇 Waffle"
+    ];
+    const choice = treats[Math.floor(Math.random() * treats.length)];
+    document.getElementById("wheel-result").textContent = `You got: ${choice}!`;
+  }
+
+  document.querySelector("form")?.addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("🎉 Your birthday brunch request was received! We'll reach out soon.");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
